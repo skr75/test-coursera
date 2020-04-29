@@ -1,7 +1,6 @@
-README.md:
-	echo "# This is the readme file for coursera_test" > README.md
-	echo "# Hope it works as it is my first time ever" > README.md
-  echo "## The make was run at:" >> README.md
-	date >> README.md
-	echo "## the file guessing game is made of lines: " >> README.md
-	wc -l < guessinggame.sh >> README.md
+all : 
+2 	@echo "# Peer-graded Assignment: Bash, Make, Git, and GitHub" > README.md 
+3 	@echo -n "The number of lines of code contained in **guessinggame.sh** is " >> README.md 
+4 	@cat guessinggame.sh | wc -l  >> README.md 
+5 	@echo -n "\nThe date and time at which **make** was run: " >> README.md 
+6 	@date >> README.md 
